@@ -11,7 +11,7 @@ body {
   padding: 0;
   width: 100%;
   position: relative;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: white;
 }
 
@@ -25,6 +25,7 @@ body {
   .home-pointer {
     cursor: none; /* Hide default cursor */
   }
+
   /* Hide default cursor on interactive elements */
   .home-pointer a,
   .home-pointer button,
@@ -32,5 +33,19 @@ body {
   .home-pointer textarea,
   .home-pointer select {
     cursor: none;
+  }
+
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+    animation-play-state: running;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
