@@ -16,9 +16,21 @@ body {
 }
 
 @layer utilities {
-    .bg-hero {
-        background-image: url('/public/blue_bg.jpg');
-        background-size: cover;
-        background-position: center;
-    }
-} 
+  .bg-hero {
+    background-image: url("/blue_bg.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .home-pointer {
+    cursor: none; /* Hide default cursor */
+  }
+  /* Hide default cursor on interactive elements */
+  .home-pointer a,
+  .home-pointer button,
+  .home-pointer input,
+  .home-pointer textarea,
+  .home-pointer select {
+    cursor: none;
+  }
+}
