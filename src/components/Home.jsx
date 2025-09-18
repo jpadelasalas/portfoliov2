@@ -13,7 +13,7 @@ const Home = () => {
         <Header />
 
         {/* Homepage Section */}
-        <section className="h-full flex flex-col-reverse xl:flex-row items-center justify-between lg:px-24 px-10 relative overflow-hidden">
+        <section className="h-full flex flex-col-reverse xl:flex-row items-center md:justify-between justify-center lg:px-24 px-10 relative overflow-hidden">
           {/* Left Section */}
           <div className="z-40 xl:w-1/2 w-full text-center xl:text-left xl:mb-0 mb-12">
             <motion.h1
@@ -64,7 +64,7 @@ const Home = () => {
               className="relative inline-block mt-5"
             >
               <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-gray-400 to-gray-100 text-blue-700 font-bold hover:from-blue-700 hover:to-black hover:text-white transition-all duration-500">
-                About Me
+                <a href="portfoliov2">About Me</a>
               </button>
               <motion.div
                 className="absolute -left-10 top-1/2 -translate-y-1/2 text-blue-400"
@@ -100,7 +100,7 @@ const Home = () => {
             <Lottie
               animationData={robotAnimation}
               loop={true}
-              className="w-[80%] md:w-[60%] lg:w-[500px] h-auto"
+              className="w-[80%] md:w-[60%] lg:w-[1000px] h-auto"
             />
           </motion.div>
         </section>
