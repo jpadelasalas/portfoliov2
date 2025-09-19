@@ -27,3 +27,23 @@ export const techStack = [
   { name: "TailwindCSS", percent: 80, color: "from-teal-400 to-emerald-500" },
   { name: "Others", percent: 70, color: "from-gray-400 to-gray-600" },
 ];
+
+export const contributions = [
+  { month: "Dec", commits: 8 },
+  { month: "Jan", commits: 33 },
+  { month: "Feb", commits: 25 },
+  { month: "Mar", commits: 29 },
+  { month: "Apr", commits: 34 },
+  { month: "May", commits: 15 },
+  { month: "Jun", commits: 17 },
+  { month: "Jul", commits: 17 },
+  { month: "Aug", commits: 29 },
+  { month: "Sep", commits: 32 },
+  { month: "Oct", commits: 101 },
+  { month: "Nov", commits: 111 },
+];
+
+export const stats = [
+  { label: "Contributions", value: 600, icon: "🚀" },
+  { label: "Repositories", value: 6, icon: "📦" },
+];
