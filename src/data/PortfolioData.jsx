@@ -1,4 +1,6 @@
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import AboutSection from "../components/AboutSection";
+import ProjectSection from "../components/ProjectSection";
 
 export const socialLinks = [
   {
@@ -44,13 +46,28 @@ export const contributions = [
 ];
 
 export const stats = [
-  { label: "Contributions", value: 600, icon: "🚀" },
+  { label: "Total Contributions", value: 600, icon: "🚀" },
   { label: "Repositories", value: 6, icon: "📦" },
 ];
 
 export const navs = {
   About: "About",
+  Experience: "Experience",
   Skills: "Skills",
   Projects: "Projects",
   Contact: "Contact",
+};
+
+export const tabs = {
+  About: <AboutSection />,
+  Skills: "Skills",
+  Projects: <ProjectSection />,
+  Contact: "Contact",
+  Experience: "Experience",
+};
+
+export const projectNavs = {
+  All: "All",
+  Personal: "Personal",
+  Professional: "Professional",
 };

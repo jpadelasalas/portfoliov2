@@ -53,7 +53,7 @@ const Header = () => {
             </motion.a>
           ))}
 
-          {/* Hire Me */}
+          {/* About Me */}
           <motion.button
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -71,7 +71,18 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden flex items-center">
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{
+            type: "spring",
+            stiffness: 100,
+            damping: 25,
+            delay: 0.5,
+            duration: 1.2,
+          }}
+          className="md:hidden flex items-center"
+        >
           <motion.button
             whileTap={{ scale: 0.7 }}
             onClick={toggleMenu}
@@ -83,7 +94,7 @@ const Header = () => {
               <FiX className="h-6 w-6" />
             )}
           </motion.button>
-        </div>
+        </motion.div>
       </div>
 
       {/* Mobile Menu */}
@@ -113,7 +124,7 @@ const Header = () => {
           onClick={toggleMenu}
           className="mt-4 block w-full px-4 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-blue-400 font-bold"
         >
-          <Link to="/portfolio#about">About Me</Link>
+          <Link to="/portfoliov2">About Me</Link>
         </button>
       </motion.div>
     </header>

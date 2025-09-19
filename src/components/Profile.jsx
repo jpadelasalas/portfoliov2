@@ -78,7 +78,7 @@ const Profile = () => {
               delay: 0.8,
               duration: 1,
             }}
-            className="px-2 py-1 bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-700 rounded-xs shadow-md hover:shadow-lg hover:shadow-gray-600/40 shadow-gray-900/70 transition flex flex-col text-center"
+            className="px-2 py-1 bg-card flex flex-col text-center"
           >
             <span className="font-bold text-sm">3+</span>
             <span className="font-mono text-xs">Years Experience</span>
@@ -93,7 +93,7 @@ const Profile = () => {
               delay: 1,
               duration: 1,
             }}
-            className="px-2 py-1 bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-700 rounded-xs shadow-md hover:shadow-lg hover:shadow-gray-600/40 shadow-gray-900/70 transition flex flex-col text-center"
+            className="px-2 py-1 bg-card flex flex-col text-center"
           >
             <span className="font-bold text-sm">10+</span>
             <span className="font-mono text-xs">Projects Completed</span>
