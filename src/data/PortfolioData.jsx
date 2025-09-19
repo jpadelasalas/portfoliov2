@@ -47,3 +47,10 @@ export const stats = [
   { label: "Contributions", value: 600, icon: "🚀" },
   { label: "Repositories", value: 6, icon: "📦" },
 ];
+
+export const navs = {
+  About: "About",
+  Skills: "Skills",
+  Projects: "Projects",
+  Contact: "Contact",
+};

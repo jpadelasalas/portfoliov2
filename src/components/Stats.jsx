@@ -23,10 +23,10 @@ const Stats = () => {
         delay: 0.2,
         duration: 1.5,
       }}
-      className="hidden md:block space-y-5"
+      className="hidden md:block space-y-2"
     >
       {/* Contributions Line Chart */}
-      <div className="bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-700 rounded-xl p-5 shadow-md hover:shadow-lg hover:shadow-gray-600/40 shadow-gray-900/70 transition max-w-md mx-auto">
+      <div className="bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-700 rounded-md p-6 shadow-md hover:shadow-lg hover:shadow-gray-600/40 shadow-gray-900/70 transition max-w-md mx-auto">
         <h3 className="text-lg font-bold text-white mb-4">
           Contributions Over The Year
         </h3>
@@ -51,11 +51,11 @@ const Stats = () => {
       </div>
 
       {/* Git Stat Cards */}
-      <div className="grid grid-cols-2 gap-6 ">
+      <div className="grid grid-cols-2 gap-2 ">
         {stats.map((stat, i) => (
           <div
             key={i}
-            className="bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-700 rounded-xl py-2 shadow-gray-900/70 text-center shadow-md hover:shadow-lg hover:shadow-gray-600/40 transition"
+            className="bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-700 rounded-md py-2 shadow-gray-900/70 text-center shadow-md hover:shadow-lg hover:shadow-gray-600/40 transition"
           >
             <div className="text-2xl mb-2">{stat.icon}</div>
             <div className="flex items-center justify-center space-x-1">
@@ -66,7 +66,7 @@ const Stats = () => {
         ))}
       </div>
 
-      <div className="bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-700 rounded-xl p-5 shadow-md hover:shadow-lg shadow-gray-900/70 hover:shadow-gray-600/40 transition max-w-md mx-auto">
+      <div className="bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-700 rounded-md p-5 shadow-md hover:shadow-lg shadow-gray-900/70 hover:shadow-gray-600/40 transition max-w-md mx-auto">
         <h3 className="text-lg font-bold text-white mb-4">Tech Stack</h3>
         <div className="space-y-4">
           {techStack.map((lang, i) => (

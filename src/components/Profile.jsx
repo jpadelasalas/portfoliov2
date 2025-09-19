@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Profile = () => {
   return (
-    <section className="flex flex-col md:flex-row space-x-10 mb-5">
+    <section className="flex flex-col md:flex-row space-x-10 mb-10">
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
@@ -19,7 +19,7 @@ const Profile = () => {
         <img
           src={"./JP.jpg"}
           alt="profile"
-          className="rounded-full w-25 h-25 md:w-45 md:h-45"
+          className="rounded-full w-25 h-25 md:w-35 md:h-35"
         />
         <h3 className="block md:hidden text-md font-bold font-mono text-wrap mt-5">
           John Patrick A. de las Alas
@@ -36,7 +36,7 @@ const Profile = () => {
             delay: 0.6,
             duration: 1.5,
           }}
-          className="hidden md:block text-3xl font-bold font-mono text-wrap"
+          className="hidden md:block text-xl font-bold font-mono text-wrap"
         >
           John Patrick A. de las Alas
         </motion.h3>
@@ -50,7 +50,7 @@ const Profile = () => {
             delay: 0.6,
             duration: 1.5,
           }}
-          className="text-lg md:text-md font-extrabold mb-5 md:mb-10"
+          className="text-md md:text-sm font-extrabold mb-4 md:mb-7"
         >
           <TypeAnimation
             sequence={[
@@ -80,8 +80,8 @@ const Profile = () => {
             }}
             className="px-2 py-1 bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-700 rounded-xs shadow-md hover:shadow-lg hover:shadow-gray-600/40 shadow-gray-900/70 transition flex flex-col text-center"
           >
-            <span className="font-bold text-lg">3+</span>
-            <span className="font-mono">Years experience</span>
+            <span className="font-bold text-sm">3+</span>
+            <span className="font-mono text-xs">Years Experience</span>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -95,8 +95,8 @@ const Profile = () => {
             }}
             className="px-2 py-1 bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-700 rounded-xs shadow-md hover:shadow-lg hover:shadow-gray-600/40 shadow-gray-900/70 transition flex flex-col text-center"
           >
-            <span className="font-bold text-lg">10+</span>
-            <span className="font-mono">Projects Completed</span>
+            <span className="font-bold text-sm">10+</span>
+            <span className="font-mono text-xs">Projects Completed</span>
           </motion.div>
         </div>
       </div>
