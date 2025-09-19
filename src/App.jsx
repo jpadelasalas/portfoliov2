@@ -1,6 +1,7 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./components/Home";
 import Portfolio from "./components/Portfolio";
+import CustomCursor from "./components/CustomCursor";
 
 function App() {
   return (

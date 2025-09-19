@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { FiGithub, FiLinkedin, FiMenu, FiMail, FiX } from "react-icons/fi";
+import { FiMenu, FiX } from "react-icons/fi";
+import { Link } from "react-router-dom";
+import { socialLinks } from "../data/PortfolioData";
 
 const Header = () => {
   // Toggle the Menu open/close
@@ -35,33 +37,21 @@ const Header = () => {
 
         {/* Social icons - Desktop */}
         <div className="md:flex hidden items-center space-x-4">
-          <motion.a
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.7 + 1 * 0.2, duration: 0.8 }}
-            className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
-            href="#"
-          >
-            <FiGithub className="w-5 h-5" />
-          </motion.a>
-          <motion.a
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.7 + 2 * 0.2, duration: 0.8 }}
-            className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
-            href="#"
-          >
-            <FiMail className="w-5 h-5" />
-          </motion.a>
-          <motion.a
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.7 + 3 * 0.2, duration: 0.8 }}
-            className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
-            href="#"
-          >
-            <FiLinkedin className="w-5 h-5" />
-          </motion.a>
+          {socialLinks.map((link, index) => (
+            <motion.a
+              key={link.id}
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.7 + (index + 1) * 0.2, duration: 0.8 }}
+              className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={link.name}
+            >
+              <link.icon className="w-5 h-5" />
+            </motion.a>
+          ))}
 
           {/* Hire Me */}
           <motion.button
@@ -76,7 +66,7 @@ const Header = () => {
             }}
             className="ml-4 px-4 py-2 rounded-xl bg-gradient-to-r from-gray-400 to-gray-100 text-blue-700 font-bold hover:from-blue-700 hover:to-black hover:text-white transition-all duration-500"
           >
-            <a href="portfoliov2">About Me</a>
+            <Link to="/portfoliov2">About Me</Link>
           </motion.button>
         </div>
 
@@ -104,16 +94,18 @@ const Header = () => {
         className="md:hidden overflow-hidden bg-white dark:bg-gray-900 shadow-lg px-4 space-y-5"
       >
         <div className="pt-4 border-t border-gray-300 dark:border-gray-700">
-          <div className="flex space-x-5">
-            <a href="#">
-              <FiGithub className="h-5 w-5 text-gray-300" />
-            </a>
-            <a href="#">
-              <FiMail className="h-5 w-5 text-gray-300" />
-            </a>
-            <a href="#">
-              <FiLinkedin className="h-5 w-5 text-gray-300" />
-            </a>
+          <div className="flex justify-center space-x-5">
+            {socialLinks.map((link) => (
+              <a
+                key={link.id}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={link.name}
+              >
+                <link.icon className="h-5 w-5 text-gray-300" />
+              </a>
+            ))}
           </div>
         </div>
 
@@ -121,7 +113,7 @@ const Header = () => {
           onClick={toggleMenu}
           className="mt-4 block w-full px-4 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-blue-400 font-bold"
         >
-          <a href="portfoliov2">About Me</a>
+          <Link to="/portfolio#about">About Me</Link>
         </button>
       </motion.div>
     </header>

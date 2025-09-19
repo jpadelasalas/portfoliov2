@@ -1,4 +1,3 @@
-import { techIcons } from "../constants/IconLists";
 import Profile from "./Profile";
 import Stats from "./Stats";
 
@@ -7,7 +6,7 @@ const Portfolio = () => {
     <main className="min-h-screen relative">
       <div className="px-5 md:px-12 py-10 max-w-7xl mx-auto flex flex-col z-10">
         <div className="grid md:grid-cols-[8fr_4fr] grid-cols-1">
-          <div className="flex flex-col mx-5">
+          <div id="about" className="flex flex-col mx-5">
             {/* Profile  */}
             <Profile />
 

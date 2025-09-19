@@ -4,12 +4,14 @@ import Lottie from "lottie-react";
 import { Pointer } from "lucide-react";
 import CustomCursor from "./CustomCursor";
 import robotAnimation from "../json/space boy developer.json";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <>
       <div className="relative h-screen bg-hero bg-cover bg-center home-pointer">
         <div className="absolute inset-0 md:bg-black/20 bg-black/50 backdrop-blur-sm"></div>
+        {/* Header */}
         <Header />
 
         {/* Homepage Section */}
@@ -64,7 +66,7 @@ const Home = () => {
               className="relative inline-block mt-5"
             >
               <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-gray-400 to-gray-100 text-blue-700 font-bold hover:from-blue-700 hover:to-black hover:text-white transition-all duration-500">
-                <a href="portfoliov2">About Me</a>
+                <Link to="/portfoliov2">About Me</Link>
               </button>
               <motion.div
                 className="absolute -left-10 top-1/2 -translate-y-1/2 text-blue-400"
