@@ -76,6 +76,34 @@ body {
   .bg-card {
     @apply bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-700 rounded-xs shadow-gray-900/70 shadow-md hover:shadow-lg hover:shadow-gray-600/40 transition;
   }
+
+  .project-card {
+    @apply p-2;
+
+    & img {
+      @apply rounded-sm h-auto w-full;
+    }
+
+    & label {
+      @apply font-bold md:text-[15px] text-xs text-gray-400 mt-1;
+    }
+
+    & h3 {
+      @apply text-white font-bold md:text-base text-sm;
+    }
+
+    & span {
+      @apply text-gray-500;
+    }
+
+    & .content {
+      @apply mt-2 flex flex-row items-center flex-wrap gap-2;
+    }
+
+    & .content span {
+      @apply text-[50px];
+    }
+  }
 }
 
 @keyframes marquee {

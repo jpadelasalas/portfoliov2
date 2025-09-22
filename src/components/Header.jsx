@@ -53,7 +53,7 @@ const Header = () => {
             </motion.a>
           ))}
 
-          {/* About Me */}
+          {/* CV */}
           <motion.button
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -66,7 +66,9 @@ const Header = () => {
             }}
             className="ml-4 px-4 py-2 rounded-xl bg-gradient-to-r from-gray-400 to-gray-100 text-blue-700 font-bold hover:from-blue-700 hover:to-black hover:text-white transition-all duration-500"
           >
-            <Link to="/portfoliov2">About Me</Link>
+            <a href="/#" download>
+              Download CV
+            </a>
           </motion.button>
         </div>
 
@@ -124,7 +126,9 @@ const Header = () => {
           onClick={toggleMenu}
           className="mt-4 block w-full px-4 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-blue-400 font-bold"
         >
-          <Link to="/portfoliov2">About Me</Link>
+          <a href="/#" download>
+            Download CV
+          </a>
         </button>
       </motion.div>
     </header>

@@ -29,7 +29,9 @@ const Portfolio = () => {
                 delay: 1.5,
                 duration: 0.5,
               }}
-              className="flex-1 overflow-y-auto"
+              className={`flex-1 ${
+                activeTab !== "Projects" && "overflow-y-auto"
+              } `}
             >
               {tabs[activeTab]}
             </motion.div>
