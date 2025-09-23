@@ -25,13 +25,10 @@ const ProjectSection = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{
               type: "spring",
-              stiffness: 40,
-              damping: 25,
-              duration: 1.5,
             }}
             key={`${key}-${value}`}
             onClick={() => setActiveNav(key)}
-            className={`py-1 cursor-pointer transition-all ease-in-out duration-300 ${
+            className={`py-1 cursor-pointer ${
               activeNav === key
                 ? "px-4 bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-700 rounded-xs shadow-gray-900/70 shadow-md text-white font-bold"
                 : "px-2 bg-black text-gray-700 font-normal hover:text-white"
@@ -85,6 +82,7 @@ const ProjectSection = () => {
                     role={value.role}
                     url={value.url}
                     icons={value.icons}
+                    label={value.label}
                   />
                 </motion.div>
               )

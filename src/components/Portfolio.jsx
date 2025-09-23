@@ -26,7 +26,7 @@ const Portfolio = () => {
               animate={{ opacity: 1 }}
               transition={{
                 type: "spring",
-                delay: 1.5,
+                delay: 1.8,
                 duration: 0.5,
               }}
               className={`flex-1 ${

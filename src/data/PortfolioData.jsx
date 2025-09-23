@@ -11,13 +11,15 @@ import {
   FaJsSquare,
   FaLaravel,
   FaGithub,
-  FaLinkedin,
 } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { BiLogoJquery } from "react-icons/bi";
-import { MdMail } from "react-icons/md";
+import SkillsSection from "../components/SkillsSection";
+import ContactSection from "../components/ContactSection";
+import ExperienceSection from "../components/ExperienceSection";
 
+// Social Links
 export const socialLinks = [
   {
     id: 1,
@@ -39,6 +41,7 @@ export const socialLinks = [
   },
 ];
 
+// Tech Stack
 export const techStack = [
   { name: "React", percent: 80, color: "from-cyan-400 to-blue-500" },
   { name: "Laravel", percent: 90, color: "from-red-400 to-pink-500" },
@@ -46,6 +49,7 @@ export const techStack = [
   { name: "Others", percent: 70, color: "from-gray-400 to-gray-600" },
 ];
 
+// Contribution Over The Year
 export const contributions = [
   { month: "Dec", commits: 8 },
   { month: "Jan", commits: 33 },
@@ -61,11 +65,13 @@ export const contributions = [
   { month: "Nov", commits: 111 },
 ];
 
+// Stats with Icon
 export const stats = [
   { label: "Total Contributions", value: 600, icon: "🚀" },
   { label: "Repositories", value: 6, icon: "📦" },
 ];
 
+// Portfolio Navigation
 export const navs = {
   About: "About",
   Experience: "Experience",
@@ -74,20 +80,23 @@ export const navs = {
   Contact: "Contact",
 };
 
+// Components
 export const tabs = {
   About: <AboutSection />,
-  Skills: "Skills",
+  Skills: <SkillsSection />,
   Projects: <ProjectSection />,
-  Contact: "Contact",
-  Experience: "Experience",
+  Contact: <ContactSection />,
+  Experience: <ExperienceSection />,
 };
 
+// Project Navigation
 export const projectNavs = {
   All: "All",
   Personal: "Personal",
   Professional: "Professional",
 };
 
+// Skillset
 export const techIcons = {
   html5: (
     <a
@@ -177,41 +186,14 @@ export const techIcons = {
       <BiLogoJquery size={25} color="#0769ad" />
     </a>
   ),
-};
-
-export const socialIcons = {
-  Github: (
-    <a
-      href="https://github.com/jpadelasalas"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:text-gray-100"
-    >
-      <FaGithub size={30} />
-    </a>
-  ),
-  LinkedIn: (
-    <a
-      href="https://www.linkedin.com/in/jpadelasalas/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:text-gray-100"
-    >
-      <FaLinkedin size={30} />
-    </a>
-  ),
-  Mail: (
-    <a
-      href="mailto:jpadelasalas@gmail.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      className={"hover:text-gray-100"}
-    >
-      <MdMail size={30} />
+  github: (
+    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+      <FaGithub size={25} color="#FFFFFF" />
     </a>
   ),
 };
 
+// List of Projects
 export const projectList = {
   portfoliov2: {
     ext: "png",
@@ -219,13 +201,15 @@ export const projectList = {
     desc: <FaArrowUpRightFromSquare size={15} />,
     role: "Sole Developer",
     type: "Personal",
-    url: "https://mini-erp-pat.vercel.app/dashboard",
+    url: "https://mini-erp-pat.vercel.app/",
     icons: {
       HTML5: techIcons.html5,
       CSS3: techIcons.css3,
       React: techIcons.react,
       TailwindCSS: techIcons.tailwind,
     },
+    label:
+      "An upgraded version of my portfolio with modern UI/UX, animations, and enhanced responsiveness. Focused on interactivity and better project presentation.",
   },
   mini_erp: {
     ext: "png",
@@ -233,13 +217,15 @@ export const projectList = {
     desc: <FaArrowUpRightFromSquare size={15} />,
     role: "Sole Developer",
     type: "Personal",
-    url: "https://mini-erp-pat.vercel.app/dashboard",
+    url: "https://mini-erp-pat.vercel.app/",
     icons: {
       HTML5: techIcons.html5,
       CSS3: techIcons.css3,
       React: techIcons.react,
       TailwindCSS: techIcons.tailwind,
     },
+    label:
+      "A lightweight Enterprise Resource Planning system covering core business operations such as sales, inventory, and employee management.",
   },
   todolist: {
     ext: "png",
@@ -254,6 +240,8 @@ export const projectList = {
       React: techIcons.react,
       TailwindCSS: techIcons.tailwind,
     },
+    label:
+      "A simple yet effective to-do list application for task tracking. Supports CRUD operations and helps in daily productivity.",
   },
   portfolio: {
     ext: "png",
@@ -270,6 +258,8 @@ export const projectList = {
       Nextjs: techIcons.nextjs,
       Typescript: techIcons.typescript,
     },
+    label:
+      "A personal portfolio website showcasing my skills, projects, and experiences. Built with clean design and responsive layout to highlight my work.",
   },
   his: {
     ext: "png",
@@ -287,6 +277,8 @@ export const projectList = {
       SQL: techIcons.sql,
       Laravel: techIcons.laravel,
     },
+    label:
+      "A hospital management platform with patient records, and workflow modules. Includes CPOE for electronic orders and case ordering for labs, radiology, and diagnostics to improve efficiency and patient care.",
   },
   clinical_docs: {
     ext: "png",
@@ -301,6 +293,8 @@ export const projectList = {
       SQL: techIcons.sql,
       Laravel: techIcons.laravel,
     },
+    label:
+      "A system for storing, organizing, and retrieving patient clinical documents securely for healthcare providers.",
   },
   document_management: {
     ext: "png",
@@ -318,6 +312,8 @@ export const projectList = {
       SQL: techIcons.sql,
       Laravel: techIcons.laravel,
     },
+    label:
+      "A system for managing documents with features like secure storage, retrieval, and automatic report generation for better document control.",
   },
   location_clearance: {
     ext: "png",
@@ -334,6 +330,8 @@ export const projectList = {
       SQL: techIcons.sql,
       PHP: techIcons.php,
     },
+    label:
+      "A system for processing and managing locational clearance applications, including form submissions and automated report generation.",
   },
   archival_system: {
     ext: "png",
@@ -350,5 +348,7 @@ export const projectList = {
       SQL: techIcons.sql,
       PHP: techIcons.php,
     },
+    label:
+      "A digital archive for newspapers, where users can upload PDF files and view them online for long-term e-storage and retrieval.",
   },
 };
