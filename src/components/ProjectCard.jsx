@@ -59,10 +59,9 @@ const ProjectCard = ({ path, ext, title, desc, role, icons, url, label }) => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 50 }}
             transition={{
-              type: "spring",
-              stiffness: 35,
+              stiffness: 20,
               damping: 5,
-              duration: 0.3,
+              duration: 0.4,
             }}
             className="absolute inset-0 flex flex-col items-center justify-center bg-black/90 rounded-xl text-white text-center p-4 transition-opacity duration-300 cursor-pointer"
           >
