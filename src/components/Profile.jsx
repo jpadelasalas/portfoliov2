@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Profile = () => {
   return (
-    <section className="flex flex-col md:flex-row space-x-10 mb-10">
+    <section className="flex flex-col sm:flex-row space-x-10 mb-10">
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}

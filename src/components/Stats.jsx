@@ -23,14 +23,18 @@ const Stats = () => {
         delay: 0.2,
         duration: 1.5,
       }}
-      className="hidden md:block space-y-2"
+      className="space-y-2"
     >
       {/* Contributions Line Chart */}
       <div className="p-6 bg-card max-w-md mx-auto">
-        <h3 className="text-lg font-bold text-white mb-4">
+        <h3 className="text-md md:text-lg font-bold text-white mb-4">
           Contributions Over The Year
         </h3>
-        <ResponsiveContainer width="100%" height={170}>
+        <ResponsiveContainer
+          width="100%"
+          height={170}
+          className="text-sm -translate-x-4"
+        >
           <LineChart data={contributions}>
             <XAxis dataKey="month" stroke="#9ca3af" />
             <YAxis stroke="#9ca3af" />
@@ -54,10 +58,12 @@ const Stats = () => {
       <div className="grid grid-cols-2 gap-2 ">
         {stats.map((stat, i) => (
           <div key={i} className="py-2 bg-card text-center">
-            <div className="text-2xl mb-2">{stat.icon}</div>
+            <div className="text-lg md:text-2xl mb-2">{stat.icon}</div>
             <div className="flex items-center justify-center space-x-1">
-              <h3 className="text-lg font-bold text-white">{stat.value}</h3>
-              <p className="text-gray-400 text-xs">{stat.label}</p>
+              <h3 className="text-md md:text-lg font-bold text-white px-2">
+                {stat.value}
+              </h3>
+              <p className="text-gray-400 text-xs md:text-sm">{stat.label}</p>
             </div>
           </div>
         ))}

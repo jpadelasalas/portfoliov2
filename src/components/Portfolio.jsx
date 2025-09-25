@@ -38,7 +38,9 @@ const Portfolio = () => {
           </div>
 
           {/* Stats */}
-          <Stats />
+          <div className="hidden md:block ">
+            <Stats />
+          </div>
         </div>
       </div>
     </main>

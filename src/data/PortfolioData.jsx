@@ -352,3 +352,30 @@ export const projectList = {
       "A digital archive for newspapers, where users can upload PDF files and view them online for long-term e-storage and retrieval.",
   },
 };
+
+export const experienceData = {
+  onedoc: {
+    company: "One Document Corporation",
+    title: "Full Stack Developer",
+    year: "2023 - Present",
+    desc: [
+      "Collaborated on ERP and EHR platforms using Laravel and React to deliver scalable solutions.",
+      "Enhanced efficiency by consolidating Clinical Document requests into a single AJAX call.",
+      "Refactored hard-coded logic and loops, improving maintainability and reducing technical debt.",
+      "Optimized performance by consolidating queries and applying eager loading to eliminate n+1 issues.",
+      "Debugged and resolved system issues, ensuring reliability and smooth operations.",
+      "Performed code reviews to uphold best practices and improve overall code quality.",
+      "Trained new hires, accelerating onboarding and team productivity.",
+    ],
+  },
+  free: {
+    company: "Freelance",
+    title: "Full Stack Developer",
+    year: "2022 - 2023",
+    desc: [
+      "Communicated with clients to gather requirements and ensure project alignment with goals.",
+      "Created design proposals emphasizing usability, functionality, and visual appeal.",
+      "Developed full-stack web solutions using HTML, CSS, Bootstrap, JavaScript, jQuery, Laravel, and MySQL.",
+    ],
+  },
+};
