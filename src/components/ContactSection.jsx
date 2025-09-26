@@ -2,10 +2,13 @@ import { motion } from "framer-motion";
 import { socialLinks } from "../data/PortfolioData";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
 
 const ContactSection = () => {
+  // Email form
   const form = useRef();
 
+  // Function to send email
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -19,14 +22,23 @@ const ContactSection = () => {
       .then(
         (result) => {
           console.log("Email sent:", result.text);
-          alert("Message sent successfully!");
+          Swal.fire({
+            icon: "success",
+            title: "Message Sent!",
+            text: "Your message was sent successfully.",
+          });
         },
         (error) => {
           console.error("Error:", error.text);
-          alert("Failed to send message.");
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Failed to send your message. Please try again later.",
+          });
         }
       );
   };
+
   return (
     <motion.section
       initial={{ opacity: 0, y: 50 }}
