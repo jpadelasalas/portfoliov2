@@ -8,35 +8,43 @@ const ContactSection = () => {
   // Email form
   const form = useRef();
 
+  // Email JS IDs and Key
+  const serviceId = import.meta.env.VITE_SERVICE_ID;
+  const templateId = import.meta.env.VITE_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+
   // Function to send email
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "your_service_id",
-        "your_template_id",
-        form.current,
-        "your_public_key"
-      )
-      .then(
-        (result) => {
-          console.log("Email sent:", result.text);
-          Swal.fire({
-            icon: "success",
-            title: "Message Sent!",
-            text: "Your message was sent successfully.",
-          });
-        },
-        (error) => {
-          console.error("Error:", error.text);
-          Swal.fire({
-            icon: "error",
-            title: "Oops...",
-            text: "Failed to send your message. Please try again later.",
-          });
-        }
-      );
+    // Show loading alert
+    Swal.fire({
+      title: "Sending...",
+      text: "Please wait.",
+      allowOutsideClick: false,
+      didOpen: () => {
+        Swal.showLoading();
+      },
+    });
+
+    emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
+      (result) => {
+        console.log("Email sent:", result.text);
+        Swal.fire({
+          icon: "success",
+          title: "Message Sent!",
+          text: "Your message was sent successfully.",
+        });
+      },
+      (error) => {
+        console.error("Error:", error.text);
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: error.text,
+        });
+      }
+    );
   };
 
   return (
@@ -122,7 +130,7 @@ const ContactSection = () => {
         />
         <button
           type="submit"
-          className="rounded px-4 py-2 bg-gradient-to-r from-gray-400 to-gray-100 text-blue-700 font-bold hover:from-blue-700 hover:to-black hover:text-white transition-all duration-500"
+          className="cursor-pointer rounded px-4 py-2 bg-gradient-to-r from-gray-400 to-gray-100 text-blue-700 font-bold hover:from-blue-700 hover:to-black hover:text-white transition-all duration-500"
         >
           Send
         </button>
