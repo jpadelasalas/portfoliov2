@@ -43,10 +43,10 @@ export const socialLinks = [
 
 // Tech Stack
 export const techStack = [
-  { name: "React", percent: 80, color: "from-cyan-400 to-blue-500" },
-  { name: "Laravel", percent: 90, color: "from-red-400 to-pink-500" },
-  { name: "TailwindCSS", percent: 80, color: "from-teal-400 to-emerald-500" },
-  { name: "Others", percent: 70, color: "from-gray-400 to-gray-600" },
+  { name: "React", percent: 40, color: "from-cyan-400 to-blue-500" },
+  { name: "Laravel", percent: 30, color: "from-red-400 to-pink-500" },
+  { name: "TailwindCSS", percent: 20, color: "from-teal-400 to-emerald-500" },
+  { name: "Others", percent: 10, color: "from-gray-400 to-gray-600" },
 ];
 
 // Contribution Over The Year

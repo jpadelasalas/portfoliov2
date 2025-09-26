@@ -57,7 +57,7 @@ const SkillsSection = () => {
             title={key}
             className="p-0 md:p-2 flex flex-col items-center justify-center"
           >
-            <div className="bg-card p-6 md:p-4">
+            <div className="bg-card p-6 md:px-4 md:py-3">
               <span className="inline-block transition-transform duration-300 ease-in-out hover:scale-125">
                 {value}
               </span>
