@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const SocialContent = () => {
   return (
-    <div className="md:flex hidden items-center space-x-4">
+    <>
       {socialLinks.map((link, index) => (
         <motion.a
           key={link.id}
@@ -33,11 +33,11 @@ const SocialContent = () => {
         }}
         className="ml-4 px-4 py-2 rounded-xl bg-gradient-to-r from-gray-400 to-gray-100 text-blue-700 font-bold hover:from-blue-700 hover:to-black hover:text-white transition-all duration-500"
       >
-        <a href="/#" download>
+        <a href="/Resume.pdf" download>
           Download CV
         </a>
       </motion.button>
-    </div>
+    </>
   );
 };
 

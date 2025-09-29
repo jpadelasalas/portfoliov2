@@ -14,7 +14,7 @@ const ExperienceSection = () => {
           },
         },
       }}
-      className="pl-8 pr-5 py-1 my-2 flex flex-col space-x-1 max-h-[60vh]"
+      className="pl-4 md:pl-8 pr-5 py-1 my-2 flex flex-col space-x-1 max-h-[60vh]"
     >
       {Object.entries(experienceData).map(([key, value]) => (
         <motion.div

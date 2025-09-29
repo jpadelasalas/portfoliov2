@@ -36,7 +36,9 @@ const Header = () => {
         </motion.div>
 
         {/* Social icons - Desktop */}
-        <SocialContent />
+        <div className="md:flex hidden items-center space-x-4">
+          <SocialContent />
+        </div>
 
         {/* Mobile Menu Button */}
         <motion.div

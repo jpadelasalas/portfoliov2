@@ -63,7 +63,9 @@ const ContactSection = () => {
       {/* Left Section */}
       <div className="w-full flex flex-col space-y-1">
         <h2 className="font-bold text-xl">Get in Touch: </h2>
-        <SocialContent />
+        <div className="flex items-center space-x-4">
+          <SocialContent />
+        </div>
       </div>
 
       {/* Right Section */}
