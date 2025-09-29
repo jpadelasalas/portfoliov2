@@ -66,7 +66,7 @@ const Home = () => {
               className="relative inline-block mt-5"
             >
               <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-gray-400 to-gray-100 text-blue-700 font-bold hover:from-blue-700 hover:to-black hover:text-white transition-all duration-500">
-                <Link to="/portfoliov2">About Me</Link>
+                <Link to="/me">About Me</Link>
               </button>
               <motion.div
                 className="absolute -left-10 top-1/2 -translate-y-1/2 text-blue-400"
