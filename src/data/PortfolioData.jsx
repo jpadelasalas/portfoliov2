@@ -74,9 +74,9 @@ export const stats = [
 // Portfolio Navigation
 export const navs = {
   About: "About",
-  Experience: "Experience",
   Skills: "Skills",
   Projects: "Projects",
+  Experience: "Experience",
   Contact: "Contact",
 };
 
@@ -360,6 +360,8 @@ export const experienceData = {
     year: "2023 - Present",
     desc: [
       "Collaborated on ERP and EHR platforms using Laravel and React to deliver scalable solutions.",
+      "Improved app performance with code-splitting, lazy loading, and memoization (React.memo, useCallback, useMemo).",
+      "Built custom React hooks to simplify and reuse complex logic across multiple components.",
       "Enhanced efficiency by consolidating Clinical Document requests into a single AJAX call.",
       "Refactored hard-coded logic and loops, improving maintainability and reducing technical debt.",
       "Optimized performance by consolidating queries and applying eager loading to eliminate n+1 issues.",
