@@ -30,9 +30,8 @@ const Home = () => {
               }}
               className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6"
             >
-              Delivering Fast
-              <br />
-              Dependable Solutions
+              Building Fast <br />
+              Reliable Results
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 80 }}
