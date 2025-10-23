@@ -67,8 +67,8 @@ export const contributions = [
 
 // Stats with Icon
 export const stats = [
-  { label: "Total Contributions", value: 600, icon: "🚀" },
-  { label: "Repositories", value: 6, icon: "📦" },
+  { label: "Total Contributions", value: 737, icon: "🚀" },
+  { label: "Repositories", value: 7, icon: "📦" },
 ];
 
 // Portfolio Navigation
