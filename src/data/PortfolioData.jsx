@@ -195,6 +195,24 @@ export const techIcons = {
 
 // List of Projects
 export const projectList = {
+  cleanstack: {
+    ext: "png",
+    title: "React-laravel Cleanstack",
+    desc: <FaArrowUpRightFromSquare size={15} />,
+    role: "Sole Developer",
+    type: "Personal",
+    url: "https://github.com/jpadelasalas/react-laravel-cleanstack",
+    icons: {
+      HTML5: techIcons.html5,
+      CSS3: techIcons.css3,
+      React: techIcons.react,
+      TailwindCSS: techIcons.tailwind,
+      SQL: techIcons.sql,
+      Laravel: techIcons.laravel,
+    },
+    label:
+      "A clean and scalable full-stack boilerplate using React for the frontend and Laravel for the backend. Features organized folder structure, reusable components, and RESTful APIs for rapid and maintainable web app development.",
+  },
   portfoliov2: {
     ext: "png",
     title: "Portfolio v2",
