@@ -12,8 +12,14 @@ import {
   FaLaravel,
   FaGithub,
 } from "react-icons/fa";
+import { DiNodejsSmall } from "react-icons/di";
 import { FaBootstrap } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
+import {
+  SiExpress,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 import { BiLogoJquery } from "react-icons/bi";
 import SkillsSection from "../components/SkillsSection";
 import ContactSection from "../components/ContactSection";
@@ -152,6 +158,16 @@ export const techIcons = {
   nextjs: (
     <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
       <SiNextdotjs size={25} color="#FFFFFF" />
+    </a>
+  ),
+  nodejs: (
+    <a href="https://nodejs.org/en" target="_blank" rel="noopener noreferrer">
+      <DiNodejsSmall size={25} color="#339933" />
+    </a>
+  ),
+  expressjs: (
+    <a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer">
+      <SiExpress size={25} color="#000000" />
     </a>
   ),
   tailwind: (
