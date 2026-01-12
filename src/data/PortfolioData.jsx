@@ -211,6 +211,42 @@ export const techIcons = {
 
 // List of Projects
 export const projectList = {
+  schedule_tracker: {
+    ext: "png",
+    title: "Schedule Tracker",
+    desc: "(On-Premise)",
+    role: "Freelance Project",
+    type: "Professional",
+    url: "#",
+    icons: {
+      HTML5: techIcons.html5,
+      CSS3: techIcons.css3,
+      React: techIcons.react,
+      TailwindCSS: techIcons.tailwind,
+      SQL: techIcons.sql,
+      Laravel: techIcons.laravel,
+    },
+    label:
+      "An on-premise employee scheduling system built with React and Laravel. It manages on-site work, field assignments, official business, and leave events, supports employee-specific notes, and automatically sends email reminders to users for events scheduled on the current day.",
+  },
+  e_projectdocs: {
+    ext: "png",
+    title: "E-ProjectDocs",
+    desc: "(On-Premise)",
+    role: "Freelance Project",
+    type: "Professional",
+    url: "#",
+    icons: {
+      HTML5: techIcons.html5,
+      CSS3: techIcons.css3,
+      React: techIcons.react,
+      TailwindCSS: techIcons.tailwind,
+      SQL: techIcons.sql,
+      Laravel: techIcons.laravel,
+    },
+    label:
+      "An on-premise engineering document repository built with React and Laravel, focused on organizing project deliverables across their lifecycle. It centralizes project files per engineer, enables controlled downloads, and archives completed projects to preserve records and reduce document sprawl.",
+  },
   cleanstack: {
     ext: "png",
     title: "React-laravel Cleanstack",
