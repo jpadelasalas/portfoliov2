@@ -37,11 +37,11 @@ const ExperienceSection = () => {
           <div className="flex flex-col w-full py-1">
             <h2 className="font-bold">{value.company}</h2>
             <span className="text-sm text-gray-400">{value.year}</span>
-            <ul className="list-disc list-inside mt-2 text-gray-300">
+            <ul className="list-disc list-inside mt-2 text-gray-300 text-sm">
               {value.desc.map((val, index) => (
                 <li
                   key={`${index}-${val}`}
-                  className="text-indent-[-1.5rem] pl-6"
+                  className="text-indent-[-1rem] pl-2"
                 >
                   {val}
                 </li>

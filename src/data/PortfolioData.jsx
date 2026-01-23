@@ -2,6 +2,7 @@ import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import AboutSection from "../components/AboutSection";
 import ProjectSection from "../components/ProjectSection";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+
 import {
   FaHtml5,
   FaCss3Alt,
@@ -10,17 +11,32 @@ import {
   FaReact,
   FaJsSquare,
   FaLaravel,
+  FaBootstrap,
   FaGithub,
+  FaGitAlt,
+  FaNpm,
+  FaDocker,
+  FaAws,
+  FaLinux,
 } from "react-icons/fa";
-import { DiNodejsSmall } from "react-icons/di";
-import { FaBootstrap } from "react-icons/fa";
 import {
-  SiExpress,
   SiNextdotjs,
+  SiExpress,
   SiTailwindcss,
   SiTypescript,
+  SiMysql,
+  SiChartdotjs,
+  SiRedux,
+  SiComposer,
+  SiVite,
+  SiWebpack,
+  SiVercel,
+  SiNetlify,
+  SiJsonwebtokens,
 } from "react-icons/si";
+import { DiNodejsSmall } from "react-icons/di";
 import { BiLogoJquery } from "react-icons/bi";
+import { TbApi, TbFileTypePdf, TbMail, TbCloudUpload } from "react-icons/tb";
 import SkillsSection from "../components/SkillsSection";
 import ContactSection from "../components/ContactSection";
 import ExperienceSection from "../components/ExperienceSection";
@@ -103,7 +119,9 @@ export const projectNavs = {
 };
 
 // Skillset
+
 export const techIcons = {
+  // ===== LANGUAGES =====
   html5: (
     <a
       href="https://developer.mozilla.org/en-US/docs/Web/HTML"
@@ -122,26 +140,7 @@ export const techIcons = {
       <FaCss3Alt size={25} color="#1572b6" />
     </a>
   ),
-  php: (
-    <a href="https://www.php.net/" target="_blank" rel="noopener noreferrer">
-      <FaPhp size={25} color="#4479ff" />
-    </a>
-  ),
-  sql: (
-    <a
-      href="https://www.w3schools.com/sql/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <FaDatabase size={25} color="#4479ff" />
-    </a>
-  ),
-  react: (
-    <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
-      <FaReact size={25} color="#61dafb" />
-    </a>
-  ),
-  js: (
+  javascript: (
     <a
       href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
       target="_blank"
@@ -150,14 +149,64 @@ export const techIcons = {
       <FaJsSquare size={25} color="#f7df1e" />
     </a>
   ),
-  laravel: (
-    <a href="https://laravel.com/" target="_blank" rel="noopener noreferrer">
-      <FaLaravel size={25} color="#FF2D20" />
+  typescript: (
+    <a
+      href="https://www.typescriptlang.org/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <SiTypescript size={25} color="#3178C6" />
+    </a>
+  ),
+  php: (
+    <a href="https://www.php.net/" target="_blank" rel="noopener noreferrer">
+      <FaPhp size={25} color="#777BB4" />
+    </a>
+  ),
+  sql: (
+    <a
+      href="https://www.w3schools.com/sql/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaDatabase size={25} color="#4479A1" />
+    </a>
+  ),
+
+  // ===== FRONTEND FRAMEWORKS =====
+  react: (
+    <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
+      <FaReact size={25} color="#61dafb" />
     </a>
   ),
   nextjs: (
     <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
       <SiNextdotjs size={25} color="#FFFFFF" />
+    </a>
+  ),
+  tailwind: (
+    <a
+      href="https://tailwindcss.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <SiTailwindcss size={25} color="#38BDF8" />
+    </a>
+  ),
+  bootstrap: (
+    <a
+      href="https://getbootstrap.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaBootstrap size={25} color="#7952B3" />
+    </a>
+  ),
+
+  // ===== BACKEND FRAMEWORKS =====
+  laravel: (
+    <a href="https://laravel.com/" target="_blank" rel="noopener noreferrer">
+      <FaLaravel size={25} color="#FF2D20" />
     </a>
   ),
   nodejs: (
@@ -170,36 +219,41 @@ export const techIcons = {
       <SiExpress size={25} color="#000000" />
     </a>
   ),
-  tailwind: (
+
+  // ===== DATABASES =====
+  mysql: (
+    <a href="https://www.mysql.com/" target="_blank" rel="noopener noreferrer">
+      <SiMysql size={25} color="#4479A1" />
+    </a>
+  ),
+
+  // ===== STATE MANAGEMENT & DATA VISUALIZATION =====
+  redux: (
+    <a href="https://redux.js.org/" target="_blank" rel="noopener noreferrer">
+      <SiRedux size={25} color="#764ABC" />
+    </a>
+  ),
+  chartjs: (
     <a
-      href="https://tailwindcss.com/"
+      href="https://www.chartjs.org/"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <SiTailwindcss size={25} color="#38BDF8" />
+      <SiChartdotjs size={25} color="#FF6384" />
     </a>
   ),
-  typescript: (
-    <a
-      href="https://www.typescriptlang.org/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <SiTypescript size={25} color="#3178C6" />
+
+  // ===== AUTHENTICATION & SECURITY =====
+  jwt: (
+    <a href="https://jwt.io/" target="_blank" rel="noopener noreferrer">
+      <SiJsonwebtokens size={25} color="#000000" />
     </a>
   ),
-  bootstrap: (
-    <a
-      href="https://getbootstrap.com/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <FaBootstrap size={25} color="#7952B3" />
-    </a>
-  ),
-  jquery: (
-    <a href="https://jquery.com/" target="_blank" rel="noopener noreferrer">
-      <BiLogoJquery size={25} color="#0769ad" />
+
+  // ===== TOOLS & BUILD =====
+  git: (
+    <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">
+      <FaGitAlt size={25} color="#F05032" />
     </a>
   ),
   github: (
@@ -207,6 +261,126 @@ export const techIcons = {
       <FaGithub size={25} color="#FFFFFF" />
     </a>
   ),
+  composer: (
+    <a
+      href="https://getcomposer.org/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <SiComposer size={25} color="#885630" />
+    </a>
+  ),
+  npm: (
+    <a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer">
+      <FaNpm size={25} color="#CB3837" />
+    </a>
+  ),
+  vite: (
+    <a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer">
+      <SiVite size={25} color="#646CFF" />
+    </a>
+  ),
+  webpack: (
+    <a href="https://webpack.js.org/" target="_blank" rel="noopener noreferrer">
+      <SiWebpack size={25} color="#8DD6F9" />
+    </a>
+  ),
+
+  // ===== DEPLOYMENT & DEVOPS =====
+  // docker: (
+  //   <a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer">
+  //     <FaDocker size={25} color="#2496ED" />
+  //   </a>
+  // ),
+  vercel: (
+    <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer">
+      <SiVercel size={25} color="#FFFFFF" />
+    </a>
+  ),
+  netlify: (
+    <a
+      href="https://www.netlify.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <SiNetlify size={25} color="#00C7B7" />
+    </a>
+  ),
+  // aws: (
+  //   <a href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer">
+  //     <FaAws size={25} color="#FF9900" />
+  //   </a>
+  // ),
+  // linux: (
+  //   <a href="https://www.linux.org/" target="_blank" rel="noopener noreferrer">
+  //     <FaLinux size={25} color="#FCC624" />
+  //   </a>
+  // ),
+
+  // ===== SPECIALIZED FEATURES =====
+  api: (
+    <a href="https://restfulapi.net/" target="_blank" rel="noopener noreferrer">
+      <TbApi size={25} color="#61DAFB" />
+    </a>
+  ),
+  // pdf: (
+  //   <a
+  //     href="https://github.com/dompdf/dompdf"
+  //     target="_blank"
+  //     rel="noopener noreferrer"
+  //   >
+  //     <TbFileTypePdf size={25} color="#F40F02" />
+  //   </a>
+  // ),
+  // email: (
+  //   <a
+  //     href="https://laravel.com/docs/mail"
+  //     target="_blank"
+  //     rel="noopener noreferrer"
+  //   >
+  //     <TbMail size={25} color="#0078D4" />
+  //   </a>
+  // ),
+  // storage: (
+  //   <a
+  //     href="https://laravel.com/docs/filesystem"
+  //     target="_blank"
+  //     rel="noopener noreferrer"
+  //   >
+  //     <TbCloudUpload size={25} color="#00C7B7" />
+  //   </a>
+  // ),
+
+  // ===== LEGACY (Keep for older projects) =====
+  jquery: (
+    <a href="https://jquery.com/" target="_blank" rel="noopener noreferrer">
+      <BiLogoJquery size={25} color="#0769ad" />
+    </a>
+  ),
+
+  // ===== ALIASES (for backward compatibility) =====
+  js: (
+    <a
+      href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaJsSquare size={25} color="#f7df1e" />
+    </a>
+  ),
+};
+
+export const skillCategories = {
+  languages: ["html5", "css3", "javascript", "typescript", "php", "sql"],
+  frontend: ["react", "nextjs", "tailwind", "bootstrap"],
+  backend: ["laravel", "nodejs", "expressjs"],
+  databases: ["mysql", "postgresql", "redis"],
+  stateAndViz: ["redux", "chartjs"],
+  auth: ["oauth", "jwt"],
+  tools: ["git", "github", "composer", "npm", "vite", "webpack"],
+  deployment: ["docker", "vercel", "netlify", "aws", "linux"],
+  features: ["api", "pdf", "email", "storage"],
+  legacy: ["jquery"],
 };
 
 // List of Projects
@@ -342,9 +516,9 @@ export const projectList = {
     icons: {
       HTML5: techIcons.html5,
       CSS3: techIcons.css3,
-      Bootstrap5: techIcons.bootstrap,
+      TailwindCSS: techIcons.tailwind,
       JavaScript: techIcons.js,
-      jQuery: techIcons.jquery,
+      React: techIcons.react,
       SQL: techIcons.sql,
       Laravel: techIcons.laravel,
     },
@@ -446,9 +620,11 @@ export const experienceData = {
     title: "Full Stack Developer",
     year: "2022 - 2023",
     desc: [
-      "Communicated with clients to gather requirements and ensure project alignment with goals.",
-      "Created design proposals emphasizing usability, functionality, and visual appeal.",
-      "Developed full-stack web solutions using HTML, CSS, Bootstrap, JavaScript, jQuery, Laravel, and MySQL.",
+      "Delivered 7 production systems for government offices, engineering firms, and school premises, specializing in custom document management, scheduling, and workflow automation solutions.",
+      "Built Schedule Tracker organization, eliminating manual scheduling coordination through automated email reminders and real-time calendar system.",
+      "Developed E-ProjectDocs engineering repository centralizing technical files with controlled access and project lifecycle management.",
+      "Created Document Management System and Location Clearance with automated reporting that improved data accuracy and accountability.",
+      "Delivered Digital Newspaper Archive preserving historical editions with on premises access.",
     ],
   },
 };
