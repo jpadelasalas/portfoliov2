@@ -385,6 +385,22 @@ export const skillCategories = {
 
 // List of Projects
 export const projectList = {
+  task_management: {
+    ext: "png",
+    title: "Task Management & Analytics",
+    desc: <FaArrowUpRightFromSquare size={15} />,
+    role: "Sole Developer",
+    type: "Personal",
+    url: "https://task-management-frontend-laiw.onrender.com",
+    icons: {
+      React: techIcons.react,
+      Laravel: techIcons.laravel,
+      NodeJS: techIcons.nodejs,
+      SQL: techIcons.sql,
+    },
+    label:
+      "A role-based task management platform split across a Laravel API (JWT auth, task/team CRUD) and a separate Node/Express microservice (notifications, analytics, CSV/XLSX export, scheduled digests) that talks to Laravel over HTTP using a shared-secret service token, with a React frontend consuming both.",
+  },
   supplylink: {
     ext: "png",
     title: "SupplyLink",
@@ -572,7 +588,7 @@ export const projectList = {
       Laravel: techIcons.laravel,
     },
     label:
-      "A system for storing, organizing, and retrieving patient clinical documents securely for healthcare providers.",
+      "A drag-and-drop custom form builder for a hospital EHR system: admins visually design clinical forms with a row-based layout, resizable fields, conditional inputs, and live preview, assign them per department, and store them as reusable JSON templates. Backed by session-based form locking with heartbeat renewal to prevent concurrent edits, plus audit-trail and census reporting.",
   },
   document_management: {
     ext: "png",
