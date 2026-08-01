@@ -385,10 +385,43 @@ export const skillCategories = {
 
 // List of Projects
 export const projectList = {
+  supplylink: {
+    ext: "png",
+    title: "SupplyLink",
+    desc: <FaArrowUpRightFromSquare size={15} />,
+    role: "Sole Developer",
+    type: "Personal",
+    url: "https://supplylink-fawn.vercel.app/",
+    icons: {
+      NextJS: techIcons.nextjs,
+      TypeScript: techIcons.typescript,
+      TailwindCSS: techIcons.tailwind,
+      SQL: techIcons.sql,
+    },
+    label:
+      "A multi-vendor B2B wholesale marketplace built with Next.js and PostgreSQL, where buyers submit purchase orders across vendors and every state change (confirm, ship, deliver, dispute) is written to an immutable audit trail in the same transaction as the change itself. Handles oversell-safe inventory under concurrency and tier-based bulk pricing, with a writable no-signup demo seeded for buyer, vendor, and admin roles.",
+  },
+  releaselens: {
+    ext: "png",
+    title: "ReleaseLens",
+    desc: <FaArrowUpRightFromSquare size={15} />,
+    role: "Sole Developer",
+    type: "Personal",
+    url: "https://github.com/jpadelasalas/releaselens",
+    icons: {
+      React: techIcons.react,
+      TypeScript: techIcons.typescript,
+      TailwindCSS: techIcons.tailwind,
+      Laravel: techIcons.laravel,
+      SQL: techIcons.sql,
+    },
+    label:
+      "A multi-tenant SaaS built with React and Laravel that surfaces pull-request review-flow bottlenecks, like median review time, stale PRs, and attention flags, through a read-only GitHub App integration. Includes a deterministic no-signup demo workspace, Docker deployment, and CI with accessibility and end-to-end test coverage.",
+  },
   schedule_tracker: {
     ext: "png",
     title: "Schedule Tracker",
-    desc: "(On-Premise)",
+    desc: "(On Prem)",
     role: "Freelance Project",
     type: "Professional",
     url: "#",
@@ -406,7 +439,7 @@ export const projectList = {
   e_projectdocs: {
     ext: "png",
     title: "E-ProjectDocs",
-    desc: "(On-Premise)",
+    desc: "(On Prem)",
     role: "Freelance Project",
     type: "Professional",
     url: "#",

@@ -87,11 +87,11 @@ body {
 
   /* Project card container */
   .project-card {
-    @apply relative p-2 rounded-xl transition-all duration-300;
+    @apply relative p-2 transition-all duration-300;
 
     /* Image inside project card */
     & img {
-      @apply rounded-sm h-auto w-full;
+      @apply rounded-xs w-full aspect-video object-cover;
     }
 
     /* Label inside project card */
