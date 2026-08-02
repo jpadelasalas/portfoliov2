@@ -650,7 +650,7 @@ export const projectList = {
 export const experienceData = {
   onedoc: {
     company: "One Document Corporation",
-    title: "Full Stack Developer",
+    title: "Supervisor Developer",
     year: "2023 - Present",
     desc: [
       "Collaborated on ERP and EHR platforms using Laravel and React to deliver scalable solutions.",

@@ -54,7 +54,7 @@ const Profile = () => {
         >
           <TypeAnimation
             sequence={[
-              "Full Stack Web Developer",
+              "Supervisor Developer",
               1000,
               "Building Web Solutions With Laravel & React",
               1000,

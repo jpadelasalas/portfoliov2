@@ -15,11 +15,13 @@ const AboutSection = () => {
         className="p-2 bg-card"
       >
         <p className="text-md font-sans">
-          I am a Web Developer with a solid foundation in dynamic development,
-          RDBMS, and system design. I focus on building scalable, maintainable,
-          and user-friendly applications. My strengths include clean code
-          practices, effective problem-solving, and a keen understanding of both
-          front-end and back-end workflows.
+          I am a Supervisor Developer with a solid foundation in dynamic
+          development, RDBMS, and system design, from transactional audit
+          trails and concurrency-safe inventory systems to multi-tenant SaaS
+          integrations and drag-and-drop form builders. Beyond building
+          scalable, maintainable, and user-friendly applications, I lead code
+          reviews, mentor new hires, and help the team hold to clean,
+          effective engineering practices.
         </p>
       </motion.div>
       <motion.div
@@ -36,8 +38,8 @@ const AboutSection = () => {
       >
         <p className="text-md font-sans">
           I graduated as cum laude from Southern Luzon State University (SLSU).
-          Fully committed to life-long learning, I am a full stack developer
-          with a strong passion for logic and algorithm. The blend of
+          Fully committed to life-long learning, I am now a Supervisor
+          Developer with a strong passion for logic and algorithm. The blend of
           creativity, and technology—and the endless opportunities for
           discovery—drives my excitement for building web applications. Outside
           of coding, I enjoy gaming, staying active, and music.
