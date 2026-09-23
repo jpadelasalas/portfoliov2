@@ -80,7 +80,7 @@ const Profile = () => {
             }}
             className="px-2 py-1 bg-card flex flex-col text-center"
           >
-            <span className="font-bold text-sm">3+</span>
+            <span className="font-bold text-sm">4+</span>
             <span className="font-mono text-xs">Years Experience</span>
           </motion.div>
           <motion.div

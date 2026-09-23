@@ -18,15 +18,17 @@ const SkillsSection = () => {
     >
       <div className="w-full p-2 mx-1 flex flex-col space-y-2">
         <div className="bg-card p-2">
-          I have a solid foundation in web development, working with both
-          frontend and backend technologies.
+          I build and lead healthcare platforms end to end — EHR, hospital
+          information systems, and population health — across Laravel, React,
+          and SQL Server.
         </div>
         <div className="bg-card p-2">
-          My skills span across building responsive UIs with React, Next.js,
-          Tailwind, and Bootstrap, crafting efficient backend systems with PHP,
-          Laravel, and SQL, and enhancing interactivity with JavaScript,
-          TypeScript, and jQuery. I also manage version control through GitHub
-          to ensure clean and collaborative workflows.
+          On the backend I work in Laravel with the repository and service
+          pattern, FormRequest validation, and query tuning against MySQL,
+          SQL Server, and PostgreSQL, including HL7 v2 messaging for lab and
+          radiology integration. On the frontend I build with React, Next.js,
+          Tailwind, Redux Toolkit, and TanStack Query. I also own CI/CD through
+          GitHub Actions and lead code review for the team.
         </div>
       </div>
       <motion.div

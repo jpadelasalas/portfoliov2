@@ -36,6 +36,7 @@ const ExperienceSection = () => {
           {/* Right content */}
           <div className="flex flex-col w-full py-1">
             <h2 className="font-bold">{value.company}</h2>
+            <span className="text-sm text-gray-200">{value.title}</span>
             <span className="text-sm text-gray-400">{value.year}</span>
             <ul className="list-disc list-inside mt-2 text-gray-300 text-sm">
               {value.desc.map((val, index) => (

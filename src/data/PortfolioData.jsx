@@ -63,7 +63,7 @@ export const socialLinks = [
   },
 ];
 
-// Tech Stack
+// Tech Stack — share of work across projects (not self-rated proficiency)
 export const techStack = [
   { name: "React", percent: 40, color: "from-cyan-400 to-blue-500" },
   { name: "Laravel", percent: 30, color: "from-red-400 to-pink-500" },
@@ -90,7 +90,7 @@ export const contributions = [
 // Stats with Icon
 export const stats = [
   { label: "Total Contributions", value: 737, icon: "🚀" },
-  { label: "Repositories", value: 7, icon: "📦" },
+  { label: "Repositories", value: 8, icon: "📦" },
 ];
 
 // Portfolio Navigation
@@ -370,19 +370,6 @@ export const techIcons = {
   ),
 };
 
-export const skillCategories = {
-  languages: ["html5", "css3", "javascript", "typescript", "php", "sql"],
-  frontend: ["react", "nextjs", "tailwind", "bootstrap"],
-  backend: ["laravel", "nodejs", "expressjs"],
-  databases: ["mysql", "postgresql", "redis"],
-  stateAndViz: ["redux", "chartjs"],
-  auth: ["oauth", "jwt"],
-  tools: ["git", "github", "composer", "npm", "vite", "webpack"],
-  deployment: ["docker", "vercel", "netlify", "aws", "linux"],
-  features: ["api", "pdf", "email", "storage"],
-  legacy: ["jquery"],
-};
-
 // List of Projects
 export const projectList = {
   task_management: {
@@ -494,7 +481,7 @@ export const projectList = {
     desc: <FaArrowUpRightFromSquare size={15} />,
     role: "Sole Developer",
     type: "Personal",
-    url: "https://mini-erp-pat.vercel.app/",
+    url: "https://jpadelasalas-portfoliov2.vercel.app/",
     icons: {
       HTML5: techIcons.html5,
       CSS3: techIcons.css3,
@@ -572,7 +559,7 @@ export const projectList = {
       Laravel: techIcons.laravel,
     },
     label:
-      "A hospital management platform with patient records, and workflow modules. Includes CPOE for electronic orders and case ordering for labs, radiology, and diagnostics to improve efficiency and patient care.",
+      "A hospital management platform covering patient records, CPOE electronic ordering, and case ordering across labs, radiology, and diagnostics. I built the HL7 v2 integration layer connecting the hospital to third-party laboratory (LIS) and radiology (RIS) providers, constructing, parsing, and acknowledging MSH, PID, PV1, OBR, OBX, ORM, and ACK segments so orders and results flow between systems without manual re-entry.",
   },
   clinical_docs: {
     ext: "png",
@@ -651,17 +638,26 @@ export const experienceData = {
   onedoc: {
     company: "One Document Corporation",
     title: "Supervisor Developer",
-    year: "2023 - Present",
+    year: "Feb 2026 - Present",
     desc: [
-      "Collaborated on ERP and EHR platforms using Laravel and React to deliver scalable solutions.",
-      "Improved app performance with code-splitting, lazy loading, and memoization (React.memo, useCallback, useMemo).",
-      "Built custom React hooks to simplify and reuse complex logic across multiple components.",
-      "Enhanced efficiency by consolidating Clinical Document requests into a single AJAX call.",
-      "Refactored hard-coded logic and loops, improving maintainability and reducing technical debt.",
-      "Optimized performance by consolidating queries and applying eager loading to eliminate n+1 issues.",
-      "Debugged and resolved system issues, ensuring reliability and smooth operations.",
-      "Performed code reviews to uphold best practices and improve overall code quality.",
-      "Trained new hires, accelerating onboarding and team productivity.",
+      "Lead developer on the EHR Clinical Documentation platform (Laravel 12, React 19, SQL Server): authored the repository and service architecture spanning 26 repositories, 31 services, 121 API endpoints, and 68 custom React hooks.",
+      "Led a platform-wide refactor migrating authentication, form-locking, and utilities endpoints from controller-embedded queries to a layered request/service/repository architecture, reducing the form-lock controller from 525 to 83 lines across 48 files.",
+      "Designed a TTL-based form-locking system with heartbeat renewal and automatic stale-lock expiry, preventing concurrent edits to the same clinical document across users and sessions.",
+      "Sole owner of CI/CD and release engineering: GitHub Actions pipelines and PowerShell environment provisioning for test and production deployments.",
+      "Built the clinical-record audit-trail service supporting access traceability.",
+      "Review and merge team contributions, maintain backend coding standards, and onboard new developers.",
+    ],
+  },
+  onedoc_dev: {
+    company: "One Document Corporation",
+    title: "Full-Stack Developer (Laravel / React)",
+    year: "Nov 2023 - Feb 2026",
+    desc: [
+      "Built HL7 v2 laboratory and radiology (LIS/RIS) integration connecting the hospital system to third-party diagnostic providers, covering message construction, parsing, and acknowledgement across MSH, PID, PV1, OBR, OBX, ORM, and ACK segments.",
+      "Reviewed and merged 180+ pull requests from a 15-developer team across the hospital information system, maintaining integration quality ahead of releases.",
+      "Designed package order processing to batch item, tax-rate, and physician lookups into keyed collections joined in memory: a fixed 3 queries per package regardless of item count, avoiding per-item N+1 lookups.",
+      "Sole author of the cash/POS module on the population health platform (repository, service, validation, and controller layers), including conditional relation loading that hydrates only the payment relations a transaction's type requires.",
+      "Delivered CPOE request handling, radiology result views, surgery module, and patient portal API for the hospital information system.",
     ],
   },
   free: {
@@ -669,11 +665,11 @@ export const experienceData = {
     title: "Full Stack Developer",
     year: "2022 - 2023",
     desc: [
-      "Delivered 7 production systems for government offices, engineering firms, and school premises, specializing in custom document management, scheduling, and workflow automation solutions.",
-      "Built Schedule Tracker organization, eliminating manual scheduling coordination through automated email reminders and real-time calendar system.",
-      "Developed E-ProjectDocs engineering repository centralizing technical files with controlled access and project lifecycle management.",
-      "Created Document Management System and Location Clearance with automated reporting that improved data accuracy and accountability.",
-      "Delivered Digital Newspaper Archive preserving historical editions with on premises access.",
+      "Delivered 7 production systems as sole developer for government offices, engineering firms, and schools, from requirements gathering through deployment and handoff.",
+      "Built Schedule Tracker, an on-premise scheduling platform replacing manual coordination with a real-time calendar and automated email reminders for same-day events.",
+      "Developed E-ProjectDocs, an engineering document repository organizing project deliverables by lifecycle stage with per-engineer file ownership, controlled downloads, and archival of completed projects.",
+      "Created a Document Management System and Location Clearance workflow with automated report generation, improving data accuracy and accountability for permit processing.",
+      "Delivered a Digital Newspaper Archive for long-term preservation of historical editions with on-premise PDF storage and retrieval.",
     ],
   },
 };

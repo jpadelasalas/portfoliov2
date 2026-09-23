@@ -45,11 +45,12 @@ const Home = () => {
               }}
               className="text-base md:text-lg lg:text-2xl text-purple-200 max-w-2xl mx-auto xl:mx-0"
             >
-              I’m a passionate web developer with expertise in building
-              responsive front-end interfaces, scalable back-end systems, and
-              custom design solutions. I specialize in delivering websites, web
-              applications, and user experiences that are both functional and
-              tailored to your unique business needs.
+              Full-stack developer building clinical platforms with Laravel and
+              React — EHR, hospital information systems, and population health.
+              I built the HL7 v2 lab and radiology integration connecting a
+              hospital to its third-party diagnostic providers, and now lead
+              architecture and release engineering on an EHR documentation
+              platform.
             </motion.p>
 
             {/* Button with Pointer */}
