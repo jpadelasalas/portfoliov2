@@ -502,6 +502,7 @@ export const projectList = {
       HTML5: techIcons.html5,
       CSS3: techIcons.css3,
       React: techIcons.react,
+      Typescript: techIcons.typescript,
       TailwindCSS: techIcons.tailwind,
     },
     label:
