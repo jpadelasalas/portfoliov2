@@ -33,6 +33,9 @@ import {
   SiVercel,
   SiNetlify,
   SiJsonwebtokens,
+  SiPostgresql,
+  SiOpenai,
+  SiClaude,
 } from "react-icons/si";
 import { DiNodejsSmall } from "react-icons/di";
 import { BiLogoJquery } from "react-icons/bi";
@@ -227,6 +230,16 @@ export const techIcons = {
     </a>
   ),
 
+  postgresql: (
+    <a
+      href="https://www.postgresql.org/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <SiPostgresql size={25} color="#4169E1" />
+    </a>
+  ),
+
   // ===== STATE MANAGEMENT & DATA VISUALIZATION =====
   redux: (
     <a href="https://redux.js.org/" target="_blank" rel="noopener noreferrer">
@@ -287,11 +300,11 @@ export const techIcons = {
   ),
 
   // ===== DEPLOYMENT & DEVOPS =====
-  // docker: (
-  //   <a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer">
-  //     <FaDocker size={25} color="#2496ED" />
-  //   </a>
-  // ),
+  docker: (
+    <a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer">
+      <FaDocker size={25} color="#2496ED" />
+    </a>
+  ),
   vercel: (
     <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer">
       <SiVercel size={25} color="#FFFFFF" />
@@ -351,6 +364,22 @@ export const techIcons = {
   //   </a>
   // ),
 
+  // ===== AI TOOLS =====
+  codex: (
+    <a
+      href="https://openai.com/codex/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <SiOpenai size={25} color="#FFFFFF" />
+    </a>
+  ),
+  claude: (
+    <a href="https://claude.com/" target="_blank" rel="noopener noreferrer">
+      <SiClaude size={25} color="#D97757" />
+    </a>
+  ),
+
   // ===== LEGACY (Keep for older projects) =====
   jquery: (
     <a href="https://jquery.com/" target="_blank" rel="noopener noreferrer">
@@ -372,6 +401,26 @@ export const techIcons = {
 
 // List of Projects
 export const projectList = {
+  common_market: {
+    ext: "png",
+    title: "Common Market",
+    desc: <FaArrowUpRightFromSquare size={15} />,
+    role: "Sole Developer",
+    type: "Personal",
+    url: "https://cm-shell.pages.dev",
+    icons: {
+      React: techIcons.react,
+      TypeScript: techIcons.typescript,
+      "Vite + Module Federation": techIcons.vite,
+      Laravel: techIcons.laravel,
+      PostgreSQL: techIcons.postgresql,
+      Docker: techIcons.docker,
+      "OpenAI Codex (planning, UI/UX)": techIcons.codex,
+      "Claude (code)": techIcons.claude,
+    },
+    label:
+      "A multi-seller marketplace built as a microfrontend system: a React + TypeScript shell loads independently deployed storefront, seller and admin apps at runtime through Vite Module Federation, backed by a Laravel modular monolith on PostgreSQL. Features idempotent checkout split per seller, oversell-safe inventory verified with real concurrency tests, versioned remote releases with rollback, and Playwright end-to-end and accessibility coverage, deployed on Cloudflare Pages, Render and Neon. Planning and UI/UX were done with OpenAI Codex; the code was written with Anthropic's Claude under my direction.",
+  },
   task_management: {
     ext: "png",
     title: "Task Management & Analytics",
